@@ -1,0 +1,30 @@
+<div class="modal fade" id="modal" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content">
+    <div class="modal-header1">
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+        <form class="modal-form" id="myForm" method="POST">
+            <h3 class="modal-label"><label for="fTitle">Title</label></h3>
+            <input type="text" name="fTitle" id="fTitle">
+            <h3 class="modal-label"><label for="fReview">Review</label></h3>
+            <textarea name="fReview" cols="30" rows="10" maxlength="500" id="fReview"></textarea>
+            <h3 class="modal-label"><label for="fRate">Rate</label></h3>
+            <select name="fRate" id="fRate">
+                <% for (let i = 1; i < 11; i++) { %>
+                   <option value="<%= i %>"><%= i %></option> 
+                <% } %>
+              </select>
+            <input type="hidden" name="index" id="index">
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal" id="saveBtn">Save</button>
+    </div>
+    </div>
+    
+</div>
+</div>

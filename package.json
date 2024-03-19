@@ -1,0 +1,16 @@
+{
+  "name": "Blog Web App",
+  "version": "1.0.0",
+  "description": "Capstalon project with Node.js and Express.js about blog web application.",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "y": "^0.3.2"
+  },
+  "devDependencies": {
+    "prettier": "3.2.5"
+  }
+}

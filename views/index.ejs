@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="container col-xxl px-5 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="postBackground py-3 px-4 my-3" id="addMovieBtn">
+            <div class="postAddFilm py-1 px-4" id="addMovie" data-toggle="modal" data-target="#modal">Add movie</div>
+        </div>
+
+        <% for (let i = 0; i < movieList.length; i++) {
+            const element = movieList[i]; %>
+        
+            <div class="postBackground post py-3 px-4 my-3">
+                <h2 class="pb-2 border-bottom postTitle"><%= element["title"] %> <span class="rate"><%= element["rate"] %>/10</span></h2>
+                <p><%= element["review"] %></p>
+                <div class="postBottom">
+                    Added: <%= element["date"] %>
+                    <span class="rate">
+                        <button class="btn btn-danger d-inline-flex align-items-center" type="button" name="deleteBtn" value="<%= i %>">Delete</button>
+                        <button class="btn btn-primary d-inline-flex align-items-center" type="button" name="editBtn" data-toggle="modal" data-target="#modal" value="<%= i %>">
+                        Edit
+                        </button>
+                    </span>
+                </div>
+            </div>
+        <% } %>
+    </div>
+  </div>
+
+<%- include("partials/modal.ejs") %>
+
+<%- include("partials/footer.ejs") %>

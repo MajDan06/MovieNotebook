@@ -1,0 +1,80 @@
+body {
+  background-color: #222;
+  font-family: "Libre Baskerville";
+  color: aliceblue;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.postBackground {
+  background-color: #1f1e1e;
+  border-radius: 1em;
+}
+
+.postAddFilm {
+  display: flex;
+  background-color: #7e7676;
+  opacity: 50%;
+  border-radius: 1.5em;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #1f1e1e;
+}
+
+.modal-header1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.btn-close {
+  margin: -0.5rem -0.5rem -0.5rem auto;
+  background-color: rgb(97, 28, 28);
+}
+
+.btn-success {
+  margin: -0.5rem -0.5rem -0.5rem auto;
+  background-color: rgb(36, 129, 48);
+  border: rgb(36, 129, 48);
+}
+
+input,
+textarea,
+select {
+  color: #1f1e1e;
+  font-weight: 700;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.modal-label {
+  max-width: max-content;
+}
+
+.rate {
+  float: right;
+}
+
+.postBottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
